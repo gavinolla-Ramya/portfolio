@@ -1,7 +1,34 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import profileImage from './assets/profilell.jpg';
+import girl from './assets/girl.png';
+import python from './assets/python3.png';
+import html from './assets/html.png';
+import css from './assets/css.png';
+import dsa from './assets/DSA.png';
+import node from'./assets/node.png';
+import express from './assets/express.png';
+import mongo from './assets/mongodb.png';
+import mysql from './assets/mysql.png';
+import mlImg from './assets/ml.png';
+import jsImg from './assets/js.png';
+import reactImg from './assets/react.png';
+import gitImg from './assets/git.png';
+import windowImg from'./assets/window.png';
+import vscodeImg from './assets/vscode.png';
+import postmanImg from './assets/postman.png';
+import leetcodeIcon from'./assets/leetcode.png';
+import hackerrankIcon from './assets/hackerrank1.png';
+import mailIcon from './assets/mail1.png'
+import githubIcon from './assets/github.png';
+import linkedinIcon from './assets/linkedin1.png';
+ import project1Image from './assets/plant.png';
+import project2Image from './assets/sign.png';
+ import project3Image from './assets/weather.png';
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -71,7 +98,7 @@ function App() {
           <p className="typewriter">{text}<span className="cursor">|</span></p>
         </div>
         <div className="home-image">
-          <img src="../src/assets/girl.png" alt="Ramya Illustration" />
+          <img src={girl} alt="Ramya Illustration" />
         </div>
 </section>
 
@@ -98,7 +125,7 @@ function App() {
     </div>
 
     <div className="about-image-container" data-aos="fade-left">
-      <img src="../src/assets/profilell.jpg" alt="Ramya's photo" className="about-img" />
+      <img src={profileImage} alt="Ramya's photo" className="about-img" />
       <div className="resume-btn-container">
         <a href="/Ramya_Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
           📄 Download Resume
@@ -125,12 +152,12 @@ function App() {
   </div>
 </section>
 
-    {/* Projects */}
+   
 <section className="projects" id="projects" data-aos="fade-up">
   <h2 className="section-title">Projects</h2>
   <div className="projects-grid">
     <div className="project-card" data-aos="zoom-in">
-      <img src="../src/assets/plant.png" alt="Plant Leaf Disease Detection" className="project-img" />
+      <img src={project1Image} alt="Plant Leaf Disease Detection" className="project-img" />
       <div className="project-content">
         <h3>Plant Leaf Disease Detection</h3>
         <p>
@@ -155,7 +182,7 @@ function App() {
     </div>
 
     <div className="project-card" data-aos="zoom-in">
-      <img src="../src/assets/sign.png" alt="sign language " className="project-img" />
+      <img src={project2Image} alt="sign language " className="project-img" />
       <div className="project-content">
         <h3>Sign Language Detection</h3>
         <p>
@@ -177,7 +204,7 @@ function App() {
       </div>
     </div>
     <div className="project-card" data-aos="zoom-in">
-      <img src="../src/assets/weather.png" alt="weather app " className="project-img" />
+      <img src={project3Image} alt="weather app " className="project-img" />
       <div className="project-content">
         <h3>Weather App</h3>
         <p>
@@ -207,69 +234,69 @@ function App() {
   <h2>Skills</h2>
   <div className="skills-grid">
     <div className="skill-card">
-      <img src="../src/assets/html.png" alt="HTML" />
+      <img src={html} alt="HTML" />
       <p>HTML</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/css.png" alt="CSS" />
+      <img src={css} alt="CSS" />
       <p>CSS</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/js.png" alt="JavaScript" />
+      <img src={jsImg}alt="JavaScript" />
       <p>JavaScript</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/react.png" alt="React" />
+      <img src={reactImg} alt="React" />
       <p>ReactJS</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/node.png" alt="Node.js" />
+      <img src={node} alt="Node.js" />
       <p>NodeJS</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/express.png" alt="ExpressJS" />
+      <img src={express} alt="ExpressJS" />
       <p>ExpressJS</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/mongodb.png" alt="MongoDB" />
+      <img src={mongo} alt="MongoDB" />
       <p>MongoDB</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/mysql.png" alt="MySQL" />
+      <img src={mysql} alt="MySQL" />
       <p>MySQL</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/python3.png" alt="Python" />
+      <img src={python} alt="Python" />
       <p>Python</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/ml.png" alt="Machine Learning" />
+      <img src={mlImg} alt="Machine Learning" />
       <p>Machine Learning</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/DSA.png" alt="Deep Learning" />
+      <img src={dsa} alt="Deep Learning" />
       <p>DSA</p>
     </div>
     <div className="skill-card">
-      <img src="../src/assets/git.png" alt="Git & GitHub" />
+      <img src={gitImg} alt="Git & GitHub" />
       <p>Git & GitHub</p>
     </div>
   </div>
 </section>
-{/* Tools */}
+
 <section id="tools" className="tools">
   <h2>Tools</h2>
   <div className="tools-grid">
     <div className="tool-card">
-      <img src="../src/assets/vscode.png" alt="VS Code" />
+      <img src={vscodeImg} alt="VS Code" />
       <p>VS Code</p>
     </div>
     <div className="tool-card">
-      <img src="../src/assets/postman.png" alt="Postman" />
+      <img src={postmanImg} alt="Postman" />
       <p>Postman</p>
     </div>
     <div className="tool-card">
-      <img src="../src/assets/window.png" alt="Windows" />
+      <img src={windowImg} alt="Windows" />
       <p>Windows</p>
     </div>
   </div>
@@ -282,21 +309,20 @@ function App() {
     Let's connect and build something great together!
   </p>
   <div className="contact-logos">
-    {/* <a href="mailto:gavinollaramya@example.com" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/mail1.png" alt="Email" className="contact-logo" />
-    </a> */}
+    
     <a href="https://www.linkedin.com/in/gavinolla-ramya" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/linkedin1.png" alt="LinkedIn" className="contact-logo" />
+      <img src={linkedinIcon} alt="LinkedIn" className="contact-logo" />
     </a>
     <a href="https://github.com/gavinolla-Ramya" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/github.png" alt="GitHub" className="contact-logo" />
+      <img src={githubIcon} alt="GitHub" className="contact-logo" />
     </a>
     <a href="https://leetcode.com/u/gavinollaramya9/" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/leetcode.png" alt="LeetCode" className="contact-logo"/>
+      <img src={leetcodeIcon} alt="LeetCode" className="contact-logo"/>
     </a>
     <a href="https://www.hackerrank.com/profile/gavinollaramya9" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/hackerrank1.png" alt="HackerRank" className="contact-logo" />
-    </a>
+  <img src={hackerrankIcon} alt="HackerRank" className="contact-logo" />
+</a>
+
   </div>
 </section>
 
@@ -305,13 +331,13 @@ function App() {
   <div className="footer-center">© {new Date().getFullYear()} All rights reserved</div>
   <div className="footer-right">
   <a href="mailto:gavinollaramya@example.com" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/mail1.png" alt="Email" />
+      <img src={mailIcon} alt="Email" />
     </a>
     <a href="https://www.linkedin.com/in/gavinolla-ramya" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/linkedin1.png" alt="LinkedIn" />
+      <img src={linkedinIcon} alt="LinkedIn" />
     </a>
     <a href="https://github.com/gavinolla-Ramya" target="_blank" rel="noopener noreferrer">
-      <img src="../src/assets/github.png" alt="GitHub" />
+      <img src={githubIcon} alt="GitHub" />
     </a>
   </div>
   
